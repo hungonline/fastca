@@ -1,0 +1,35 @@
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>
+        Pages List
+    </title>
+    <link rel="stylesheet" href="_app/index-partials/demo.css" media="all" />
+</head>  <h1 class="index__title">Pages List</h1>
+  <section class="index__section">
+    <ul class="index__list">
+      <h2 class="index__section-heading">HTML-PC</h2>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/About-us.html">HTML-PC-About-us.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/bien-dong-so-du.html">HTML-PC-bien-dong-so-du.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/contact.html">HTML-PC-contact.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/Crawl.html">HTML-PC-Crawl.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/detail-duan.html">HTML-PC-detail-duan.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/detail.html">HTML-PC-detail.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/FAQ.html">HTML-PC-FAQ.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/home.html">HTML-PC-home.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/new.html">HTML-PC-new.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/Pricing.html">HTML-PC-Pricing.html</a></li>
+      <li class="index__item"><a class="index__item-link" href="HTML-PC/VPS.html">HTML-PC-VPS.html</a></li>
+    </ul>
+  </section>
+<script>
+    const headingList = document.querySelectorAll('.index__section-heading');
+    for (const el of headingList) {
+      el.parentNode.parentNode.insertBefore(el, el.parentNode);
+    }
+
+    const homeItemList = document.querySelectorAll('.index__item-link[href*="index"], .index__item-link[href*="home"]');
+    for (const el of homeItemList) {
+      el.parentNode.parentNode.insertBefore(el.parentNode, el.parentNode.parentNode.firstChild)
+    }
+</script>

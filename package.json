@@ -1,0 +1,42 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "lodash": "^4.17.20",
+    "mobx": "^6.13.6",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "babel": "^5.8.38",
+    "browser-sync": "^3.0.3",
+    "eslint": "^9.20.1",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-changed": "^5.0.2",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-iconfont": "^12.0.0",
+    "gulp-index": "^0.2.0",
+    "gulp-notify": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-svgicons2svgfont": "^7.0.2",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-template-html": "^0.2.2",
+    "gulp-wait": "^0.0.2",
+    "sass": "^1.85.0",
+    "webpack": "^5.98.0",
+    "yargs": "^17.7.2"
+  }
+}

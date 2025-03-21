@@ -1,0 +1,66 @@
+// RESET LDP
+
+// END RESET LDP
+
+.section-banner{
+    background-image: url(images/graphics/bg-banner.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    .elementor-background-overlay{
+        background-image: url(images/graphics/phone-gif.webp);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 54% auto;
+        opacity: 1;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .text-post{
+        max-width: 600px;
+    }
+    .img{
+        position: absolute;
+        width: 50%;
+        right: 0;
+        bottom: 0;
+    }
+    .title{
+        font-size: 48px;
+        font-weight: bold;
+    }
+    .slogan{
+        font-weight: 400;
+        line-height: 1.4;
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .number{
+        font-size: 48px;
+        font-weight: bold;
+        color: var(--colormain);
+    }
+    .des{
+        font-size: 16px;
+    }
+    .security{
+        .itemt{
+            display: flex;
+            gap: 10px;
+            font-weight: bold;
+            .icon{
+                width: 20px;
+                flex-shrink: 0;
+                margin-top: 3px;
+            }
+        }
+    }
+}
