@@ -3,8 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="" />
     <meta name="description" content="content">
@@ -12,8 +11,7 @@
     <title>
         <!-- build:title -->
     </title>
-    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
-        rel="shortcut icon" />
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico" rel="shortcut icon" />
     <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="css/bootstrap.css" media="all" />
     <link rel="stylesheet" href="css/style.css" media="all" />
@@ -51,11 +49,37 @@
                 <div class="right_menu">
                     <a href="javascript:;" id="vibeji-ham" class="item"><span></span> <span></span> <span></span></a>
                     <a class="btn-default gray tra-cuu" href="#">Tra cứu chứng thư số</a>
-                    <a class="btn-default login" href="#">Đăng ký</a>
+                    <a class="btn-default login" href="javascript:;" data-toggle="modal" data-target="#popuplogin">Đăng ký</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Popup Đăng nhập -->
+    <div class="modal modal-login fade" id="popuplogin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Đăng nhập</h4>
+                    <p>Vòng lòng đăng nhập bằng Gmail</p>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body detail_tin">
+                    <div class="form-group relative">
+                        <img class="icon" src="images/icons/google.svg" alt="">
+                        <input type="text" class="form-control login" id="" placeholder="Đăng nhập với Gmail">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
     <!-- build:content -->
     <div class="overlay"></div>
@@ -107,17 +131,13 @@
                         <h3 class="title">Liên hệ</h3>
                         <h4>CÔNG TY CỔ PHẦN CHỮ KÝ SỐ FASTCA</h4>
                         <p>
-                            <i class="fa fa-map-marker"></i>
-                            Địa chỉ: Tầng 3, tòa nhà Dolphin Plaza,
-                            Số 28 Trần Bình, P. Mỹ Đình 2, Q. Nam Từ Liêm, Hà Nội
+                            <i class="fa fa-map-marker"></i> Địa chỉ: Tầng 3, tòa nhà Dolphin Plaza, Số 28 Trần Bình, P. Mỹ Đình 2, Q. Nam Từ Liêm, Hà Nội
                         </p>
                         <p>
-                            <i class="fa fa-phone"></i>                     
-                            Hotline: 08.1900.2158
+                            <i class="fa fa-phone"></i> Hotline: 08.1900.2158
                         </p>
                         <p>
-                            <i class="fa fa-paper-plane"></i>
-                            Email: info@fastca.vn
+                            <i class="fa fa-envelope-o"></i> Email: info@fastca.vn
                         </p>
                     </div>
                 </div>

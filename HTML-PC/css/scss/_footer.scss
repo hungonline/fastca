@@ -3,17 +3,27 @@
     padding: 50px 0px 40px 0px;
     color: #FFFFFFBF;
     font-size: 14px;
-    .flexbox{
+    .flexbox {
         display: flex;
     }
     [class*='col_'] {
         padding: 10px;
-    }   
-    .col_1{width: 15.957%;}
-    .col_2{width: 19%;}
-    .col_3{width: 17.845%;}
-    .col_4{width: 21.448%;}
-    .col_5{width: 25.747%;}
+    }
+    .col_1 {
+        width: 15.957%;
+    }
+    .col_2 {
+        width: 19%;
+    }
+    .col_3 {
+        width: 17.845%;
+    }
+    .col_4 {
+        width: 21.448%;
+    }
+    .col_5 {
+        width: 25.747%;
+    }
     .title {
         font-weight: 600;
         font-size: 16px;
@@ -21,39 +31,43 @@
         color: #fff;
         line-height: 1.4;
     }
-    h4{font-size: 14px;font-weight: 400;}
+    h4 {
+        font-size: 14px;
+        font-weight: 400;
+    }
     ul {
         margin-bottom: 30px;
         li {
             margin-bottom: 12px;
         }
     }
-    .contact{
-        p{
+    .contact {
+        p {
             display: flex;
-            i{
+            i {
                 width: 30px;
                 flex-shrink: 0;
-                margin: 3px 0 0 0;
                 font-size: 20px;
             }
-            &:last-child{
+            &:last-child {
                 margin-bottom: 0;
             }
         }
     }
-    .line-bottom{
+    .line-bottom {
         border-color: #2E2E2E;
         margin-bottom: 30px;
     }
-    .logo{
+    .logo {
         text-align: right;
-        img{
+        img {
             max-width: 210px;
         }
     }
     .copyright {
-        p{margin-bottom: 0;}
+        p {
+            margin-bottom: 0;
+        }
     }
     @media (max-width: 991px) {
         padding: 20px 0;
@@ -62,18 +76,24 @@
         }
         [class*='col_'] {
             width: 33.33%;
-        } 
-        ul{
+        }
+        ul {
             margin-bottom: 15px;
         }
     }
     @media (max-width: 576px) {
         [class*='col_'] {
             width: 50%;
-        }   
-        .col_5{width:100%;}
-        .line-bottom{padding-bottom: 20px;}
-        .logo{text-align: left;}
+        }
+        .col_5 {
+            width: 100%;
+        }
+        .line-bottom {
+            padding-bottom: 20px;
+        }
+        .logo {
+            text-align: left;
+        }
         .copyright {
             grid-template-columns: repeat(1, 1fr);
         }
