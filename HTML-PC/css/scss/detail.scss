@@ -1,7 +1,10 @@
 /* Reset CSS detail */
+.page-detail{
+    background-color: #FAFAFA;
+    padding: 20px 0;
+}
 .detail_tin {
     position: relative;
-    font-size: 17px;
     .flex-date{
         display: flex;
         align-items: center;
@@ -38,7 +41,7 @@
             display: flex;
             align-items: center;
             position: relative;
-            margin-left: 48px;
+            margin-left: 24px;
             svg{
                 margin-right: 5px;
             }
@@ -48,7 +51,7 @@
                 width: 1px;
                 height: 15px;
                 position: absolute;
-                left: -24px;
+                left: -12px;
                 top: 3px;
             }
         }
@@ -61,14 +64,14 @@
         color: #1C1C28;
     }
     .title_detail {
-        font-size: 44px;
-        font-weight: bold;
+        font-size: 32px;
+        font-weight: 600;
         margin: 0 0 24px 0;
         position: relative;
     }
     p.lead {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
         .slogan {
             background: #303030;
             color: #fff;
@@ -102,26 +105,41 @@
             max-width: 100%;
         }
     }
+    h2,
+    h3 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        line-height: 1.2;
+    }
 
-    // h2,
-    // h3 {
-    //     font-size: 25px;
-    //     font-weight: 700;
-    //     margin: 0 0 10px 0;
-    //     line-height: 1.2;
-    // }
 
     p {
         line-height: 1.6;
-        margin-bottom: 20px;
-
+        margin-bottom: 15px;
+        a{color: #c36;}
         img {
             max-width: 100%;
             margin: 0 auto;
             display: block;
         }
     }
-
+    table{
+        margin-block-end: 15px;
+        th,td{
+            padding: 15px;
+            line-height: 1.5;
+            vertical-align: top;
+            border: 1px solid hsla(0, 0%, 50.2%, .5019607843);
+        }
+        tr{
+            &:nth-child(odd){
+                td{
+                    background-color: hsla(0, 0%, 50.2%, .0705882353);
+                }
+            }
+        }
+    }
     .Images {
         text-align: center;
 
@@ -223,6 +241,19 @@
             color: #1C1C28;
         }
     }
+
+    .list-small-article{
+        .article-itemt{
+            .article-thumb{
+                width: 200px;
+            }
+            .article-content{
+                .title_new{font-size: 16px;}
+            }
+        }
+    }
+
+
     @media (max-width:1025px) {
         .title_detail {
             font-size: 26px;

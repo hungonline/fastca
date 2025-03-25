@@ -131,18 +131,48 @@
             //     disableOnInteraction: false,
             // },
         });
-        var swiperTainang = new Swiper(".section-tainang .swiper-container", {
-            slidesPerView: 4,
-            spaceBetween: 24,
-            loop: true,
-            pagination: {
-                el: ".section-tainang .swiper-pagination",
-                clickable: true,
-            },
+        var swiperArticle = new Swiper(".slide-article .swiper-container", {
+            spaceBetween: 0,
+            loop: false,
             speed: 1000,
+            effect: 'fade',
+            navigation: {
+                nextEl: ".slide-article .swiper-button-next",
+                prevEl: ".slide-article .swiper-button-prev",
+            },
             autoplay: {
                 delay: 6000,
                 disableOnInteraction: false,
+            },
+        });
+
+        var swiperGiaitri = new Swiper(".slide-giatri .swiper-container", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: ".slide-giatri .swiper-button-next",
+                prevEl: ".slide-giatri .swiper-button-prev",
+            },
+            breakpoints: {
+                991: {
+                    loop: false,
+                    slidesPerView: 2,
+                },
+                576: {
+                    loop: false,
+                    slidesPerView: 1,
+                }
+            }
+        });
+
+        var swiperGiaitri = new Swiper(".box-doitac .swiper-container", {
+            slidesPerView: 6,
+            spaceBetween: 24,
+            loop: true,
+            navigation: {
+                nextEl: ".box-doitac .swiper-button-next",
+                prevEl: ".box-doitac .swiper-button-prev",
             },
             breakpoints: {
                 767: {

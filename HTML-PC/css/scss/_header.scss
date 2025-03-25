@@ -8,7 +8,7 @@
     transition: all .2s ease-in-out;
     &.sticky {
         // background-color: #210E41;
-        // box-shadow: 0 2px 15px rgba(0, 0, 0, .09);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, .09);
         .main-menu {
             top: 52px;
         }
