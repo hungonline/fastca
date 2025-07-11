@@ -513,6 +513,9 @@ input {
             background: var(--colormain);
             border: 1px solid var(--colormain);
         }
+        &:hover {
+            color: inherit;
+        }
     }
     &.line-bottom {
         padding-bottom: 20px;

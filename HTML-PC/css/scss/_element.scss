@@ -477,7 +477,7 @@ ul.checklist {
     background-image: url(images/graphics/bg-banggia.png);
     padding: 40px 0px 0px 0px;
     &.support{
-        padding: 20px 0px 0px 0px;
+        padding: 20px 0px 30px 0px;
         .img{
             width: 30%;
         }
@@ -729,6 +729,10 @@ ul.checklist {
             }
         }
     }
+    .row{
+        max-width: 930px;
+        margin: 0 auto;
+    }
     @media (max-width: 991px) {
         padding: 30px 0;
         .tab{
@@ -928,10 +932,16 @@ ul.checklist {
         overflow: hidden;
         color: #332F3B;
     }
+    .banner-ads{
+        grid-column: span 3;
+    }
     @media (max-width: 991px) {
         grid-template-columns: repeat(2, 1fr);
         .red-today{
             grid-column: span 2;
+        }
+        .banner-ads{
+            display: none;
         }
     }
     @media (max-width: 767px) {
@@ -1074,11 +1084,16 @@ ul.checklist {
     background-image: url(images/graphics/bg-newltter.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 40px;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     padding: 63px 98px;
     color: #fff;
     margin-bottom: 60px;
+    @media (max-width: 991px) {
+        border-radius: 10px;
+        padding: 30px;
+    }
 }
 .form-send-mail{
     display: flex;
@@ -1114,6 +1129,7 @@ ul.checklist {
             border: 1px solid #E8E8FF;
             padding: 0 20px;
             border-radius: 10px;
+            top: 20px !important;
         }
         .header{
             display: flex;
@@ -1169,6 +1185,7 @@ ul.checklist {
             background: #fff;
             padding: 20px 15px;
             border-radius: 10px;
+            top: 20px !important;
         }
         .article-itemt {
             .article-thumb{width: 80px;}
@@ -1501,6 +1518,58 @@ ul.checklist {
     background-position: center;
 }
 
+.section-contact{
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    .wrap{
+        background: #fff;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 40px;
+        border-radius: 20px;
+        margin-top: -30px;
+        z-index: 1;
+    }
+    .title{
+        color: #5480c5;
+        font-size: 27px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .info{
+        li{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            .icon{
+                color: #c6c6ef;
+                width: 50px;
+                height: 50px;
+                border: 1px solid #c6c6ef;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                flex-shrink: 0;
+                margin-right: 10px;
+            }
+            &:last-child{margin-bottom: 0;}
+        }
+    }
+    @media (max-width: 991px) {
+        .wrap{
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .title{font-size: 24px;}
+    }
+}
+
 .popup-sign-now{
     display: flex;
     flex-wrap: wrap;
@@ -1534,5 +1603,14 @@ ul.checklist {
     @media (max-width: 767px) {
         .sign-left{display: none;}
         .sign-right{width: 100%;padding: 20px;}
+    }
+}
+
+.debut{
+    position: relative;
+    margin-top: 70px;
+    .position{
+        position: absolute;
+        top: -44px;
     }
 }

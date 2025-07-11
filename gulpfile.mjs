@@ -62,8 +62,10 @@ function svgCombine() {
     }))
     .pipe(cheerio({
       run: function ($) {
-        $("*").removeAttr("fill"); // 🔥 Xóa fill
-        $("*").removeAttr("stroke"); // 🔥 Xóa stroke
+        $("*").removeAttr("fill");    // ✅ Xóa fill
+        $("*").removeAttr("stroke");  // ❌ Nếu icon cần stroke, BỎ DÒNG NÀY
+        //$("svg").attr("fill", "none"); // ✅ Đặt mặc định fill="none"
+        //$("svg").attr("stroke", "black");  //✅ Nếu icon cần stroke
       },
       parserOptions: { xmlMode: true },
     }))
