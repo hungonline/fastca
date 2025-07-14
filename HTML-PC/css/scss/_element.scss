@@ -470,8 +470,9 @@ ul.checklist {
         .text-post{width: 100%;margin-bottom: 0!important;}
         .img{
             text-align: center;
-            width: 60%;
+            width: 60%!important;
             margin: 20px auto 0;
+            margin-bottom: -30px;
         }
     }
 }
