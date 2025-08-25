@@ -96,7 +96,7 @@ ul.checklist {
     padding-bottom: 30px;
     .elementor-background-overlay {
         background-image: url(images/graphics/phone-gif.webp);
-        background-position: bottom right;
+        background-position: top right;
         background-repeat: no-repeat;
         background-size: 54% auto;
         opacity: 1;
@@ -975,6 +975,7 @@ ul.checklist {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+        align-content: space-between;
         gap: 24px;
         font-family: var(--font2);
         .title{
@@ -1017,6 +1018,7 @@ ul.checklist {
             width: 100%;
             border: 0;
             color: #fff;
+            height: max-content;
         }
     }
     @media (max-width: 1025px) {
