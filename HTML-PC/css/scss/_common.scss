@@ -700,15 +700,23 @@ input {
                 transform: rotate(45deg);
                 padding: 0;
                 left: 10px;
-                top: 7px;
+                top: 9px;
             }
         }
         a {
-            color: #222222;
+             color: #757575;
         }
         &.active {
-            color: #757575;
+            color: #222222;
         }
+    }
+    @media (max-width: 600px) {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar; 
+        &::-webkit-scrollbar{display: none;}       
     }
 }
 
