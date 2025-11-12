@@ -27,6 +27,7 @@
     "gulp-index": "^0.2.0",
     "gulp-notify": "^5.0.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-purgecss": "^7.0.2",
     "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
