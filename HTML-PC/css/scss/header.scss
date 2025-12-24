@@ -385,7 +385,10 @@
     }
     .right_menu {
         a {
-            margin-left: 20px;
+            margin-left: 15px;
+        }
+        .btn-default{
+            font-weight: 400;
         }
     }
     @media (max-width: 1199px) {

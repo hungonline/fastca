@@ -387,9 +387,9 @@ input {
 .btn-default {
     font-family: var(--font2);
     display: inline-block;
-    color: #fff;
+    color: #422800;
     border-radius: 10px;
-    padding: 5px 18px;
+    padding: 6px 22px;
     font-size: 14px;
     text-align: center;
     font-weight: 600;
@@ -405,7 +405,6 @@ input {
     &.big {
         font-size: 28px;
         border-radius: 35px;
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     }
     &.medium {
         font-size: 16px;
